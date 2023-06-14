@@ -18,22 +18,24 @@
     */
 
 
+    // Chargement des constantes
+    require __DIR__ . "/constants.php";
+
 
     // Chargement et traitement des variables d'environnement
-    require __DIR__ . "/environment.php";
-    
-
-    //chargement et traitement des variables d'environnement
-
     require CONFIG . "/environment.php";
 
-    // Charger la configuration système
+
+    // Chargement de la configuration système
     require CONFIG . "/system.php";
+
 
     // Chargement de la configuration session
     require CONFIG . "/session.php";
 
-    
+
+    // Chargement du monolog
+    // require CONFIG . "/monolog.php";
 
 
     
